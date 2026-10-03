@@ -1,19 +1,36 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <title>Reliable payments without borders</title>
 </head>
 <body>
-    <nav class="nav"> 
-        <div class="logo"> 
-            <img src="../assets/Yiksi-Official-Logo-10-1-scaled-e1766299661689.png" width="270px" height="100px" alt="">
-            <h1>Yiksi</h1>
+   <nav class="nav">
+    <div class="logo">
+        <img src="../assets/Yiksi-Official-Logo-10-1-scaled-e1766299661689.png"
+             width="100" height="40" alt="Yiksi logo">
     </div>
-    
-    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+    <ul class="ul" id="menu">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Services ▾</a>
+            <div class="dropdown-menu">
+                <a href="#payout">Payout Agent Service</a>
+                <a href="#bulk">Bulk Payment</a>
+                <a href="#international">International Payments</a>
+            </div>
+        </li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#b2b-api">B2B API</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#signup" class="btn">Sign Up</a></li>
+    </ul>
+</nav>
+
     <script src="./script.js"></script>
 </body>
 </html>
