@@ -40,7 +40,7 @@ body {
 
 .dropdown {
   position: relative;
-  padding: 25px 0;      /* si aanu farqi u dhex jirin hover-ka */
+  padding: 25px 0;       
 }
 
 .dropdown-menu {
@@ -49,7 +49,7 @@ body {
   top: 100%;
   left: 0;
   min-width: 240px;
-  background: #fff;
+  background: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
@@ -67,9 +67,8 @@ body {
 }
 
 .ul .dropdown-menu a:hover {
-  background: #f0f0f0;
+   background: #f0f0f0; 
 }
-/* Batoonka hamburger-ka: desktop-ka waa qarsoon */
 .menu-toggle {
   display: none;
   background: none;
@@ -84,7 +83,7 @@ img {
   height: auto;
 }
 
-/* Tablet */
+ 
 @media (max-width: 1024px) {
   .nav {
     padding: 16px 40px;
@@ -97,7 +96,7 @@ img {
   }
 }
 
-/* Mobile */
+ 
 @media (max-width: 768px) {
   .nav {
     padding: 12px 20px;
@@ -115,30 +114,22 @@ img {
     width: 100%;
     gap: 0;
     margin-top: 12px;
-    background: #95959a;
+    background:  #0B1341;
   }
 
   .ul.open {
     display: flex;
   }
 
-  .ul > li {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-  }
-
+  
   .ul > li > a {
     display: block;
     padding: 14px 0;
   }
-
-  .btn {
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-    padding: 14px 20px;
-  }
-
-  /* Dropdown-ka mobile-ka: hover looma baahna, click ayaa furaya */
+   .btn{
+    border: none;
+   }
+  
   .dropdown {
     padding: 0;
   }
@@ -160,13 +151,12 @@ img {
   }
 
   .ul .dropdown-menu a {
-    color: #fff;
     padding: 12px 18px;
     white-space: normal;
   }
 
   .ul .dropdown-menu a:hover {
-    background: #d6d6da;
-    color: #242323;
-  }
+     background: #d6d6da;
+    color: #242323; 
+  }  
 }
