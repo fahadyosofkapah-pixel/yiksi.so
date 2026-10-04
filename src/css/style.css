@@ -247,7 +247,7 @@ img {
     .hero .btn { width: 230px; }
 }
 
-.footer {
+ /* .footer {
     background-image: url("../../assets/ae3153e8a56b1733aa8c70822241ec3d-1-1-e1784206162617.jpg");
     color: white;
     padding: 70px 20px;
@@ -392,7 +392,7 @@ img {
         max-width: 100%;
     }
 
-}
+} */
 #backToTop {
     position: fixed;
     right: 25px;
