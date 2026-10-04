@@ -1,14 +1,9 @@
-
+/* 
 .hero {
     background-image: url(../assets/shiine.jpeg);
     height: 100vh;
     width: 100%;
 }
- 
-
-
-
-
 .hero img {
     width: 500px;
     height: 650px;
@@ -63,7 +58,7 @@
 .hero .btn:hover {
     background: #087cff;
     /* transform: translateY(-2px); */
-}
+ /* }
 
 
 @media (max-width: 1000px) {
@@ -169,4 +164,4 @@
     .hero .btn {
         width: 230px;
     }
-} 
+}  */ */
