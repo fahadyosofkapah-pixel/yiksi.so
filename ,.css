@@ -1,0 +1,24 @@
+/* Container-ka ugu weyn ee dhexda keenaya wax kasta */
+.why-us-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Wuxuu dhexda ka dhigayaa qoraalka iyo cards-ka */
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Qoraalka "Why Us" */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Grid-ka ama Container-ka Cards-ka */
+.cards-grid {
+  display: flex;
+  justify-content: center; /* Cards-ka ayuu dhexda ka xirayaa */
+  gap: 24px;
+  max-width: 1200px; /* Ballaca ugu badan */
+  width: 100%;
+}

@@ -1,199 +1,114 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-   <link rel="stylesheet" href="sec.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="">
+     
+
+
+    <link rel="stylesheet" href="">
     <title>Reliable payments without borders</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
     
-</head>
-<body>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            margin: 30px;
-            justify-content: center;
-            /* width: 1000px; */
-            /* height: 10px; */
-            padding: 40px;
-
-        }
-
-        .why.section {
-            text-align: center;
-            max-width: 40px;
-            width: 100px;
-            margin: 0 auto;
-            padding: 200px;
-
-        }
-
-
-        h2 {
-            font-size: 48px;
-            color: #111;
-            margin-bottom: 40px;
-            justify-self: center;
-        }
-
-
-        .all-cards {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-            flex-wrap: wrap;
-
-
-        }
-
-        .card {
-            background-color: white;
-            border: 3px solid rgb(242, 246, 248);
-            width: 50px;
-            align-items: stretch;
-            border-radius: 4px;
-            padding: 60px 20px;
-            flex: 1;
-            min-height: 300px;
-            position: relative;
-            box-shadow: 0 2px 10px rgb(233, 231, 231);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            overflow: hidden;
-        }
-
-        .all-cards .icon .all-cards::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 8px;
-            background-color: #14bddf;
-            transition: width 0.3s ease, left 0.3s ease;
-        }
-
-       .all-cards:hover::after {
-            width: 100%;
-            left: 0;
-        }
-
-        .icon-box {
-            display: flex;
-            font-size: 32px;
-            justify-content: center;
-            gap: 4px;
-            margin-bottom: 30px;
-        }
-
-        .card::after {
-      content: "";
-
-      position: absolute;
-      left: -1px;
-      bottom: -1px;
-
-      width: calc(100% + 2px);
-      height: 7px;
-
-      background: #111947;
-
-      border-radius: 0 0 7px 7px;
-
-      transform: scaleX(0);
-      transform-origin: center;
-
-      transition: transform 0.4s ease;
-    }
-
-        .card h3 {
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
-            color: #1a3a7e;
-            margin-bottom: 15px;
-        }
-         .card:hover {
-      transform: translateY(-5px);
-
-      border-color:rgb(230, 219, 219);
-
-      box-shadow: 0 12px 30px rgba(243, 244, 247, 0.08);
-    }
-
-    .card:hover::after {
-      transform: scaleX(1);
-    }
-
-        .card p {
-            font-size: 19px;
-            color: #1e223f;
-            margin: 80px;
-            line-height: 1.8;
-            margin: 10px;
-            text-align-last: center;
-            text-align: center;
-            text-align: justify;
-            align-items: center;
-        }
-        .icon-box{
-            color: #1b263d;
-        }
-    </style>
 </head>
 
 <body>
-    
+   <nav class="nav">
+    <div class="logo">
+        <img src="../assets/Yiksi-Official-Logo-10-1-scaled-e1766299661689.png"
+             width="100" height="40" alt="Yiksi logo">
+    </div>
 
-    <section class="why.section">
-        <h2>Why Us</h2>
-        <div class="all-cards">
-            <!-- cards-1 -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
-            <div class="card">
-                <div class="icon-box">
-                    <i class="fa-solid fa-earth-americas"></i>
-                </div>
-                <h3>fast</h3>
-                <p>We settle most of our payments or transfers within a few minutes, even for large transaction sizes.
-                    This is in sharp contrast to other traditional solutions offered by banks, for example.</p>
+    <ul class="ul" id="menu">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Services▾</a>
+            <div class="dropdown-menu">
+                <a href="#payout">Payout Agent Service</a>
+                <a href="#bulk">Bulk Payment</a>
+                <a href="#international">International Payments</a>
             </div>
-            <!-- cards-2 -->
-            <div class="card">
-                <div class="icon-box">
-                    <i class="fa-solid fa-sack-dollar"></i>
-                </div>
-                <h3>Affordable</h3>
-                <p>Because we use blockchain technology, work with great banking partners, and have a robust payment
-                    network, we can provide the best rates in the market, with no extra fees or unexpected changes in
-                    rates.</p>
-            </div>
-            <!-- cards-3 -->
+        </li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#b2b-api">B2B API</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#signup" class="btn">Sign Up</a></li>
+    </ul>
+</nav>
+<!-- hero -->
+     <section class="hero">
+    <img src="../assets/image.png" alt="Yiksi payments">
+    <div class="hero-text">
+        <h1>Send & receive money across Africa and the world.</h1>
+        <p>
+            We are building robust payment rails to serve individuals and organizations with
+            diverse payment processing needs, enabling easy and fast international transfers.
+            We are creating a platform that combines traditional finance with modern fintech.
+            Send in local currency. Receive in local currency payments. With Yiksi, you can
+            transfer money anytime with ease, speed, and full confidence.
+        </p>
+        <button class="btn">Talk To An Expert Now</button>
+    </div>
+</section>
 
-            <div class="card">
-                <div class="icon-box">
-                    <i class="fa-solid fa-file-lines"></i>
-                </div>
-                <h3>Trusted & Secure</h3>
-                <p>Our team has over 10 years of combined experience in remittance and cross-border payments, having
-                    served more than 15 big corporate clients and hundreds of SMEs across Africa and abroad.</p>
-            </div>
+
+ <!-- section part -->
+
+  <section class="why-us-section">
+    <h2 class="section-title">Why Us</h2>
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <div class="icon-wrapper">
+          
+          <i class="fa-solid fa-earth-americas"></i>
+
+
 
         </div>
-        
+        <h3 class="card-title">Fast</h3>
 
-    </section>
+        <p class="card-description">
+          We settle most of our payments or transfers within a few minutes, even for large transaction sizes. This is in
+          sharp contrast to other traditional solutions offered by banks, for example.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-sack-dollar"></i>
+
+
+        </div>
+        <h3 class="card-title">Affordable</h3>
+        <p class="card-description">
+          Because we use blockchain technology, work with great banking partners, and have a robust payment network, we can provide the best rates in the market, with no extra fees or unexpected changes in rates.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-file-lines"></i>
+
+        </div>
+        <h3 class="card-title">Trusted Secure</h3>
+        <p class="card-description">
+         Our team has over 10 years of combined experience in remittance and cross-border payments, having served more than 15 big corporate clients and hundreds of SMEs across Africa and abroad.
+        </p>
+      </div>
+    </div>
+  </section>
+ 
+ 
+
+    <script src="./script.js"></script>
 </body>
 
-</html>
+</html> 
+     
